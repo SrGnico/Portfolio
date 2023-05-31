@@ -1,0 +1,24 @@
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    transition: flex 500ms ease-in-out;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    color: white;
+}
+
+main{
+    display: flex;
+    width: 100svw;
+    height: 100svh;
+}
+
+@media (max-width: 1024px){
+    main{
+        flex-direction: column;
+    }
+}
+

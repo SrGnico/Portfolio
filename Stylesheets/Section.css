@@ -1,0 +1,24 @@
+section{
+    border: 2px solid white;
+    display: flex;
+    cursor: pointer;
+}
+
+.title>h1{
+    writing-mode:vertical-rl;
+    padding:50px 0;
+}
+
+section[data-status=open]{
+    cursor: default;
+    flex: 9;
+}
+
+@media (max-width: 1024px){
+    .title>h1{
+        writing-mode:horizontal-tb;
+        padding:0 30px;
+        margin: 15px 0;
+    }
+}
+
