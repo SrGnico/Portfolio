@@ -1,8 +1,8 @@
 *{
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    transition: flex 500ms ease-in-out,
-                width 500ms ease-in-out,
+    transition: flex 500ms cubic-bezier(.51,.92,.1,.9),
+                width 1000ms cubic-bezier(.5,-.2,1,1),
                 opacity 500ms ease-in-out,
                 text-shadow 500ms ease-in-out;
 }
@@ -25,6 +25,10 @@ main{
     display: flex;
     width: 100svw;
     height: 100svh;
+}
+
+a{
+    z-index: 50;
 }
 
 @media (max-width: 1024px){

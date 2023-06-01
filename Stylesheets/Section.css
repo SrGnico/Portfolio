@@ -68,6 +68,7 @@ section[data-status=close]>.content{
 }
 
 
+
 @media (max-width: 1024px){
     section{
         flex-direction: column;
