@@ -2,6 +2,7 @@ section{
     border: 2px solid white;
     display: flex;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .title>h1{
@@ -13,6 +14,57 @@ section[data-status=open]{
     cursor: default;
     flex: 9;
 }
+
+section[data-status=close]>.content{
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+
+/* MAIN SECTION */
+
+@keyframes glowText {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 0%;}
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 150px;
+    font-size: 2rem;
+  
+}
+
+.gn-main{
+    display: flex;
+    width: 37svw;
+}
+
+.gn-main:hover>.name-main{
+    width: 50rem;
+}
+
+.name-main{
+    display: inline;
+    margin: 0;
+    overflow: hidden;
+    font-size: 5rem;
+    width: 3.7rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glowText 5000ms ease infinite;
+}
+
 
 @media (max-width: 1024px){
     .title>h1{
