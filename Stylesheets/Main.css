@@ -3,7 +3,8 @@
     box-sizing: border-box;
     transition: flex 500ms ease-in-out,
                 width 500ms ease-in-out,
-                opacity 500ms ease-in-out;
+                opacity 500ms ease-in-out,
+                text-shadow 500ms ease-in-out;
 }
 
 @keyframes bg {

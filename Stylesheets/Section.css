@@ -18,6 +18,7 @@ section[data-status=open]{
 section[data-status=close]>.content{
     overflow: hidden;
     width: 0;
+    height: 0;
     opacity: 0;
     padding: 0;
 }
@@ -48,6 +49,7 @@ section[data-status=close]>.content{
 
 .gn-main:hover>.name-main{
     width: 50rem;
+    text-shadow: #f7cf689b 0 0 5px;
 }
 
 .name-main{
@@ -67,10 +69,21 @@ section[data-status=close]>.content{
 
 
 @media (max-width: 1024px){
+    section{
+        flex-direction: column;
+    }
     .title>h1{
         writing-mode:horizontal-tb;
         padding:0 30px;
         margin: 15px 0;
+    }
+    .main{
+        padding:0px 30px;
+        font-size:x-large;
+    }
+    .gn-main{
+        width: 75svw;
+        flex-direction: column;
     }
 }
 
