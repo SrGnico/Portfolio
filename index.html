@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/Main.css">
     <link rel="stylesheet" href="Stylesheets/Section.css">
     <script src="Script.js"></script>
@@ -14,8 +14,8 @@
 </head>
 <body>
     <main>
-        <section id="main" data-status="open" onclick="changeStatus(0)"> 
-            <div class="title">
+        <section id="main" data-status="open"> 
+            <div class="title" onclick="changeStatus(0)">
                 <h1>Main</h1>
             </div>
             <div class="content main" >
@@ -25,31 +25,31 @@
                     <h1 class="name-main">Nicolas</h1>
                 </div>
                 <h4>Front end web developer / designer</h4>
-                <div class="buttons">
+                <div class="buttons-main">
                     <a onclick="changeStatus(1)">Projects</a>
                     <a onclick="changeStatus(3)">Contact</a>
                 </div>
             </div>
             
         </section>
-        <section id="projects" data-status="close" onclick="changeStatus(1)">
-            <div class="title"> 
+        <section id="projects" data-status="close" >
+            <div class="title" onclick="changeStatus(1)"> 
                 <h1>Projects</h1>
             </div>
             <div class="content" >
 
             </div>
         </section>
-        <section id="aboutMe" data-status="close" onclick="changeStatus(2)"> 
-            <div class="title">
+        <section id="aboutMe" data-status="close" > 
+            <div class="title" onclick="changeStatus(2)">
                 <h1>About Me</h1>
             </div>
             <div class="content" >
 
             </div>
         </section>
-        <section id="contact" data-status="close" onclick="changeStatus(3)"> 
-            <div class="title">
+        <section id="contact" data-status="close" > 
+            <div class="title" onclick="changeStatus(3)">
                 <h1>Contact</h1>
             </div>
             <div class="content">
