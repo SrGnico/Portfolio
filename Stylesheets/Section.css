@@ -74,8 +74,7 @@ section[data-status=close]>.content{
 
 .buttons-main{
     display: flex;
-    justify-content: space-between;
-    width: 55svh;
+    gap: 15px;
 }
 
 .buttons-main>a{
@@ -88,11 +87,14 @@ section[data-status=close]>.content{
     font-size: 1.5rem;
     padding: 10px 50px 12px 50px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .buttons-main>a:hover{
     scale: 1.075;
     box-shadow: 0 0 25px #c15e25c8;
+    animation: glowText 100ms ease infinite;
 }
 @media (max-width: 1024px){
     section{
@@ -107,9 +109,17 @@ section[data-status=close]>.content{
         padding:0px 30px;
         font-size:x-large;
     }
+    .main>h1{
+        margin: auto 0;
+    }
     .gn-main{
         width: 75svw;
         flex-direction: column;
+    }
+    .buttons-main{
+        flex-direction: column;
+        gap: 15px;
+        width: 200px;
     }
 }
 

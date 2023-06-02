@@ -29,10 +29,6 @@ main{
     height: 100svh;
 }
 
-a{
-    z-index: 50;
-}
-
 @media (max-width: 1024px){
     main{
         flex-direction: column;
