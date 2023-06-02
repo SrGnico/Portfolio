@@ -15,7 +15,7 @@ section[data-status=open]{
     flex: 9;
 }
 
-section[data-status=close]>.content{
+section[data-status=close]>.content,section[data-status=close]>.content>.section-project{
     overflow: hidden;
     width: 0;
     height: 0;
@@ -123,3 +123,14 @@ section[data-status=close]>.content{
     }
 }
 
+/* Sections */
+
+.projects{
+}
+
+.section-project{
+}
+
+.title-section-project{
+    padding:0 30px;
+}

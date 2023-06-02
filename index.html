@@ -14,7 +14,7 @@
 </head>
 <body>
     <main>
-        <section id="main" data-status="open"> 
+        <section class="principal-section" id="main" data-status="close"> 
             <div class="title" onclick="changeStatus(0)">
                 <h1>Main</h1>
             </div>
@@ -32,15 +32,29 @@
             </div>
             
         </section>
-        <section id="projects" data-status="close" >
+        <section class="principal-section" id="projects" data-status="open" >
             <div class="title" onclick="changeStatus(1)"> 
                 <h1>Projects</h1>
             </div>
-            <div class="content" >
-
+            <div class="content projects" >
+                <section class="section-project">  
+                    <div class="title-section-project"> 
+                        <h1>Games</h1>
+                    </div> 
+                </section>
+                <section class="section-project">  
+                    <div class="title-section-project"> 
+                        <h1>Advertising Websites</h1>
+                    </div> 
+                </section>
+                <section class="section-project">  
+                    <div class="title-section-project"> 
+                        <h1>Qr bar code lector</h1>
+                    </div> 
+                </section>
             </div>
         </section>
-        <section id="aboutMe" data-status="close" > 
+        <section class="principal-section" id="aboutMe" data-status="close" > 
             <div class="title" onclick="changeStatus(2)">
                 <h1>About Me</h1>
             </div>
@@ -48,7 +62,7 @@
 
             </div>
         </section>
-        <section id="contact" data-status="close" > 
+        <section class="principal-section" id="contact" data-status="close" > 
             <div class="title" onclick="changeStatus(3)">
                 <h1>Contact</h1>
             </div>
