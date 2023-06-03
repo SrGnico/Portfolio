@@ -29,6 +29,7 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     opacity: 0;
     padding: 0;
     margin: 0;
+    gap: 0;
 }
 
 @media (max-width: 1024px){
@@ -141,19 +142,20 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 
 .projects{
     display: flex;
-    align-items: flex-start;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    gap: 15px;
+    padding: 30px;
+    gap: 30px;
     position: relative;
 }
 
 .section-project{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     border: 0;
     box-shadow: 0 0 15px #c15e255c;
-    height: 8svh;
-    z-index: 15;
 }
 
 .section-project:hover{
@@ -161,7 +163,6 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     box-shadow: 0 0 25px #c15e25c8;
     animation: glowText 100ms ease infinite;
 }   
-
 .title-section-project{
     background-color: transparent;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
@@ -171,33 +172,39 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     font-size: 1.5rem;
     cursor: pointer;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 30px;
     width: 100%;
-    height: 8svh;
-
+    height: 50svh;
 }
 
-.item-project-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100svh;
-    width: 80svw;
+.section-icon{
+    align-self: flex-end;
+    height: 100px;
+    width: 100px;
 }
 
-/*games-project-section*/
-
-.games-project-section{
-    
-}
 
 @media (max-width: 1024px){
     .projects{
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        height: 100%;
+        height: 90%;
+        width: 100svw;
+    }
+    .section-project{
+        flex-direction: row;
+    }
+    .title-section-project{
+        width: 90svw;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .section-icon{
+        height: 75px;
+        width: 75px;
     }
 }
 
@@ -233,7 +240,7 @@ strong{
 }
 
 .img-me{
-    height: 500px;
+    max-height: 500px;
     object-fit: contain;
     margin-bottom: 30px;
     border: 3px solid white;
