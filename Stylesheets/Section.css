@@ -127,26 +127,18 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 
 .projects{
     display: flex;
-    width: 100%;
+    flex-direction: column;
 }
 
 .section-project{
     height: 100svh;
+    width: 25svw;
+    height: 25svw;
     flex: 1;
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/Imgs/preview\ games.png );
+
 }
 
-.section-project:nth-child(2){
-    background-image: url(/Imgs/preview\ page.png );
-}
-
-.section-project:nth-child(3){
-    background-image: url(/Imgs/previe\ qr.png );
-}
 
 .section-project::after{
     position: absolute;
@@ -155,20 +147,76 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, #c15e25c8, #f7cf6821);
 }
 
 .section-project:hover::after{
     background: transparent;
 }   
 .title-section-project{
-    padding:0 30px;
+    padding:30px;
     z-index: 50;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1024px){
     .projects{
         flex-direction: column;
         height: 100%;
+    }
+}
+
+/* About Me */
+
+.aboutMe{
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.aboutMe-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    width: 30svw;
+}
+
+strong{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glowText 100ms ease infinite;
+    font-weight: 700;
+}
+
+.img-me{
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    border: 3px solid white;
+}
+
+@media (max-width: 1024px){
+    .aboutMe{
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .aboutMe-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 300;
+        width: 90svw;
+    }
+    .img-me{
+        width: 85svw;
+        height: auto;
     }
 }
