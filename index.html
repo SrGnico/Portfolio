@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/Main.css">
     <link rel="stylesheet" href="Stylesheets/Section.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="Script.js"></script>
     <title>GN</title>
 </head>
@@ -27,12 +28,12 @@
                 <h4>Front end web developer / designer</h4>
                 <div class="buttons-main">
                     <a onclick="changeStatus(1)">Projects</a>
-                    <a onclick="changeStatus(3)">Contact</a>
+                    <a onclick="changeStatus(2)">Contact</a>
                 </div>
             </div>
             
         </section>
-        <section class="principal-section" id="projects" data-status="close" >
+        <section class="principal-section" id="projects" data-status="open" >
             <div class="title" onclick="changeStatus(1)"> 
                 <h1>Projects</h1>
             </div>
@@ -43,23 +44,23 @@
                 </section>
                 <section class="section-project">  
                     <div class="title-section-project"> 
-                        <h1>Advertising Websites</h1>
+                        <h1>Qr bar code lector</h1>
                     </div> 
                 </section>
                 <section class="section-project">  
                     <div class="title-section-project"> 
-                        <h1>Qr bar code lector</h1>
+                        <h1>Advertising Websites</h1>
                     </div> 
                 </section>
             </div>
         </section>
-        <section class="principal-section" id="aboutMe" data-status="open" > 
+        <section class="principal-section" id="aboutMe" data-status="close" > 
             <div class="title" onclick="changeStatus(2)">
-                <h1>About Me</h1>
+                <h1>Contact</h1>
             </div>
             <div class="content aboutMe" >
                 <div class="aboutMe-text">
-                    <h3>Gabriel Nicolas Rodriguez Barrio</h3>
+                    <h2>Gabriel Nicolas Rodriguez Barrio</h2>
                     <p>As a <strong>chef</strong> , I understood the importance of languages, not just in terms of spoken communication but also the language of food itself. I was fascinated by how different flavors, textures, and ingredients could come together to create a harmonious dish. This fascination translated into my interest in programming languages, where I could use code to create something meaningful and functional.
                     </p>
                     <p>Furthermore, I have always believed that food plays a significant role in our lives, not just as sustenance but also as a source of joy and pleasure. I firmly believe that creativity and productivity are closely linked to having a satisfied appetite. This belief is reflected in my motto, <strong>"I can't think on an empty stomach,"</strong>  which signifies the importance of nourishment and its positive impact on our ability to think, create, and problem-solve effectively.
@@ -69,19 +70,12 @@
                 <div class="aboutMe-text">
                     <img class="img-me" src="/Imgs/me.jpeg" alt="a pic of me :D">
                     <div class="buttons-main">
-                        <a onclick="changeStatus(1)">Projects</a>
-                        <a onclick="changeStatus(3)">Contact</a>
+                       <a href="https://github.com/SrGnico" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                       <a href="https://www.linkedin.com/in/nicolas-rodriguez-750892268/" target="_blank"><box-icon name='linkedin-square' type='logo' ></box-icon></a>
+                       <a href="mailto:gnwebdev404@gmail.com" target="_blank"><box-icon name='gmail' type='logo' ></box-icon></a>
                     </div>
                 </div>
 
-            </div>
-        </section>
-        <section class="principal-section" id="contact" data-status="close" > 
-            <div class="title" onclick="changeStatus(3)">
-                <h1>Contact</h1>
-            </div>
-            <div class="content">
-              
             </div>
         </section>
     </main>
