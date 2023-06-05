@@ -209,9 +209,6 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     padding: 30px;
 }
 
-.principal-img-content{
-    width: 100%;
-}
 
 .title-links-project{
     display: flex;
