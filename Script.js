@@ -8,3 +8,13 @@ function changeStatus(x){
     }
     
 }
+
+function changeProjectStatus(x){
+    const projects = document.querySelectorAll('.content-section-project');
+    if(projects[x].dataset.status === 'close'){
+        for(let i = 0; i < projects.length; i++){
+            projects[i].dataset.status = 'close';
+        }
+        projects[x].dataset.status = 'open';
+    }  
+}

@@ -25,7 +25,7 @@
                     <h1 class="name-main">Gabriel</h1>
                     <h1 class="name-main">Nicolas</h1>
                 </div>
-                <h4>Front end web developer / designer</h4>
+                <h4>Junior front end web developer / designer</h4>
                 <div class="buttons-main">
                     <a onclick="changeStatus(1)">Projects</a>
                     <a onclick="changeStatus(2)">Contact</a>
@@ -39,23 +39,74 @@
             </div>
             <div class="content projects" >
                 <div class="section-project">  
-                    <div class="title-section-project"> 
+                    <div class="title-section-project" onclick="changeProjectStatus(0)"> 
                         <h1>Games</h1>
                         <box-icon class="section-icon" type='solid' name='joystick'></box-icon>
                     </div>
-                    <div class="content-section-project"></div>
+                    <div class="content-section-project" data-status="open">
+                        <img class="principal-img-content" src="/Imgs/games.png" alt="">
+                        <div class="title-links-project">
+                            <h1><strong>01</strong> Memory Card Game</h1>
+                            <div class="buttons-main">
+                                <a href="https://rococo-bonbon-1123d2.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
+                                <a href="https://github.com/SrGnico/memoryGame"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <img src="/Imgs/cartas.png" alt="">
+                            <div class="text-block">
+                                <h2>Different every time</h2>
+                                <p>With every reload the cards <strong>Shuffle</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="block-content reversed">
+                            <img src="/Imgs/bg-card-pattern.png" alt="">
+                            <div class="text-block">
+                                <h2>Background patterns</h2>
+                                <p>Who said <strong>simplicity</strong> couldn't be visually captivating?</p>
+                            </div>
+                        </div>
+                        <div class="title-links-project">
+                            <h1><strong>02</strong> Wordle Clone</h1>
+                            <div class="buttons-main">
+                                <a href="https://rococo-bonbon-1123d2.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
+                                <a href="https://github.com/SrGnico/memoryGame"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                            </div>
+                        </div>
+                       
+                        <p>This project was made using a <strong>Random Word API</strong></p>
+                        <div class="block-content">
+                            <img src="/Imgs/wordle.png" alt="">
+                            <div class="text-block">
+                                <h2>The goal</h2>
+                                <p>You have to guess the 5 letter word, you have 5 tries</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="section-project">  
-                    <div class="title-section-project"> 
+                    <div class="title-section-project" onclick="changeProjectStatus(1)">   
                         <h1>Bar code lector</h1>
                         <box-icon class="section-icon" type='solid' name='barcode'></box-icon>
                     </div> 
+                    <div class="content-section-project" data-status="close">
+                        <img class="principal-img-content" src="/Imgs/barcode.png" alt="">
+                        <div class="block-content">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="section-project"> 
-                    <div class="title-section-project"> 
+                    <div class="title-section-project" onclick="changeProjectStatus(2)"> 
                         <h1>Advertising Websites</h1>
                         <box-icon class="section-icon" type='solid' name='window-alt'></box-icon>
                     </div> 
+                    <div class="content-section-project" data-status="close">
+                        <img class="principal-img-content" src="/Imgs/website.png" alt="">
+                        <div class="block-content">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

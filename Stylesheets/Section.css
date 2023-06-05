@@ -22,7 +22,7 @@ section[data-status=open]{
     flex: 9;
 }
 
-section[data-status=close]>.content,section[data-status=close]>.content>.section-project{
+section[data-status=close]>.content,section[data-status=close]>.content>.section-project, .content-section-project[data-status="close"]{
     overflow: hidden;
     width: 0;
     height: 0;
@@ -30,12 +30,16 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     padding: 0;
     margin: 0;
     gap: 0;
+    font-size: 0;
 }
 
 @media (max-width: 1024px){
     .title{
         box-shadow: 10px 0 5px black;
         backdrop-filter: blur(0);
+        height: 8svh;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -144,6 +148,7 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     padding: 30px;
     gap: 15px;
     position: relative;
@@ -192,34 +197,92 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 }
 
 .content-section-project{
-    border: 3px solid red;
     position: absolute;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 64%;
+    height: 100%;
+    padding: 30px;
+}
+
+.principal-img-content{
+    width: 100%;
+}
+
+.title-links-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-links-project>h1{
+    display: inline;
+}
+
+.block-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50svh;
+    padding: 15px;
+    gap: 15px;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+
+}
+
+.block-content>img{
+    object-fit: cover;
+    width: 50%;
     height: 100%;
 }
 
+.text-block{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
 
 @media (max-width: 1024px){
     .projects{
-        flex-direction: column;
-        height: 90%;
-        width: 100svw;
-    }
-    .section-project{
         flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+        padding: 15px;
     }
     .title-section-project{
-        width: 90svw;
-        flex-direction: row;
+        flex: 0;
+        width: 100%;
+        height: 100px;
         align-items: center;
+        justify-content: center;
         height: auto;
     }
 
+    .title-section-project>h1{
+        display: none;
+    }
     .section-icon{
         align-self: inherit;
     }
+
+    .content-section-project{
+        top: 130px;
+        height: 80%;
+        width: 100%;
+        border: 2px solid green;
+    }
+
+    .text-block{
+        padding: 0;
+    }
+    
 }
 
 /* About Me */
