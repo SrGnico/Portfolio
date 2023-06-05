@@ -146,7 +146,6 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 
 .projects{
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -156,8 +155,6 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 
 .section-project{
     flex: 1;
-    display: flex;
-    flex-direction: column;
     border: 0;
 }
 
@@ -170,12 +167,13 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     box-shadow: 0 0 15px #c15e255c;
     font-weight: bold;
     color: black;
-    font-size: 1.5rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    width: 35%;
+    height: 10%;
+    z-index: 15;
     flex: 1;
 }
 
@@ -191,9 +189,7 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 
 
 .section-icon{
-    align-self: flex-end;
-    height: 75px;
-    width: 75px;
+    height: 100%;
 }
 
 .content-section-project{
@@ -202,10 +198,10 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     display: flex;
     flex-direction: column;
     gap: 30px;
-    top: 0;
+    top: 15%;
     right: 0;
-    width: 64%;
-    height: 100%;
+    width: 100%;
+    height: 85%;
     padding: 30px;
 }
 
@@ -243,11 +239,14 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
 .text-block{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 15px;
 }
 
 @media (max-width: 1024px){
     .projects{
+        height: 100%;
         flex-direction: row;
         gap: 15px;
         justify-content: space-between;
@@ -255,9 +254,6 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
     }
     .title-section-project{
         flex: 0;
-        width: 100%;
-        height: 100px;
-        align-items: center;
         justify-content: center;
         height: auto;
     }
@@ -266,14 +262,13 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
         display: none;
     }
     .section-icon{
-        align-self: inherit;
+        width: 50%;
     }
 
     .content-section-project{
-        top: 130px;
+        top: 100px;
         height: 80%;
         width: 100%;
-        border: 2px solid green;
     }
 
     .text-block{
