@@ -271,6 +271,9 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
         height: 80%;
         width: 100%;
     }
+    .block-content{
+        flex-direction: column;
+    }
 
     .text-block{
         padding: 0;
