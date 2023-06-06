@@ -275,6 +275,11 @@ section[data-status=close]>.content,section[data-status=close]>.content>.section
         flex-direction: column;
     }
 
+    .block-content>img{
+        width: 100%;
+    }
+    
+
     .text-block{
         padding: 0;
     }
