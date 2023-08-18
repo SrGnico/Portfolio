@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/Main.css">
     <link rel="stylesheet" href="Stylesheets/Section.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Imgs/favicon-16x16.png">
+    <link rel="manifest" href="/Imgs/site.webmanifest">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="Script.js" module></script>
     <title>GN</title>
@@ -25,7 +29,7 @@
                     <h1 class="name-main">Gabriel</h1>
                     <h1 class="name-main">Nicolas</h1>
                 </div>
-                <h4>Junior front end web developer / designer</h4>
+                <h4>Mobile Developer</h4>
                 <div class="buttons-main">
                     <a onclick="changeStatus(1)">Projects</a>
                     <a onclick="changeStatus(2)">Contact</a>
@@ -39,120 +43,40 @@
             </div>
             <div class="content projects" >
                 <div class="section-project">  
-                    <div class="title-section-project" onclick="changeProjectStatus(0)"> 
-                        <h1>Games</h1>
-                        <box-icon class="section-icon" type='solid' name='joystick'></box-icon>
-                    </div>
                     <div class="content-section-project" data-status="open">
                         <div class="title-links-project">
-                            <h1><strong>01</strong> Memory Card Game</h1>
+                            <h1><strong>01</strong> Price Control App</h1>
                             <div class="buttons-main">
-                                <a href="https://rococo-bonbon-1123d2.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/memoryGame"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                                <a href="" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
+                                <a href=""title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
                             </div>
                         </div>
                         <div class="block-content">
-                            <img src="/Imgs/cartas.png" alt="">
-                            <div class="text-block">
-                                <h2>Different every time</h2>
-                                <p>With every reload the cards <strong>Shuffle</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="block-content reversed">
-                            <img src="/Imgs/bg-card-pattern.png" alt="">
-                            <div class="text-block">
-                                <h2>Background patterns</h2>
-                                <p>Who said <strong>simplicity</strong> couldn't be visually captivating?</p>
-                            </div>
-                        </div>
-                        <div class="title-links-project">
-                            <h1><strong>02</strong> Wordle Clone</h1>
-                            <div class="buttons-main">
-                                <a href="https://playful-banoffee-3e60a9.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/Wordle"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                       
-                        <p>This project was made using a <strong>Random Word API</strong></p>
-                        <div class="block-content">
-                            <img src="/Imgs/wordle.png" alt="">
-                            <div class="text-block">
-                                <h2>The game</h2>
-                                <p>The goal of the game Wordle is to guess a five-letter word within <strong>five</strong> attempts. </p>
-                            </div>
-                        </div>
-
-                        <div class="title-links-project">
-                            <h1><strong>03</strong> Ta-Te-Ti</h1>
-                            <div class="buttons-main">
-                                <a href="https://gametateti.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/ta-te-ti"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <img src="/Imgs/tateti.png" alt="">
-                            <div class="text-block">
-                                <h2>Ta Te Ti</h2>
-                                <p>In <strong>Argentina</strong> we call this game like this!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-project">  
-                    <div class="title-section-project" onclick="changeProjectStatus(1)">   
-                        <h1>Bar code lector</h1>
-                        <box-icon class="section-icon" type='solid' name='barcode'></box-icon>
-                    </div> 
-                    <div class="content-section-project" data-status="close">
-                        <div class="title-links-project">
-                            <h1><strong>01</strong> Bar code lector</h1>
-                            <div class="buttons-main">
-                                <a href="https://kioskopip.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/pip"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                        <p>(It was made for phone! may look weird in pc desktop view!)</p>
-                        <div class="block-content">
-                            <img src="/Imgs/barcode.png" alt="">
+                            <img src="/Imgs/Control de precios mockup principal-min.png" alt="">
                             <div class="text-block">
                                 <h2>Add, delete, sum and charge!</h2>
-                                <p><strong>Scan</strong> products, add it to the cart and select method payment!</p>
+                                <p>This application is designed for small businesses that want to keep their <strong> prices up to date and controlled</strong> in a pocket-sized app.
+                                </p>
+
+                                <p>In <strong>Price Control</strong>  you can add products, edit them, delete them, when charging you can <strong>scan</strong>, add manual price, increase quantities and choose the payment method.</p>
+
+                                <p>Then you can <strong>control your sales</strong> in the day, with each category, total and more information in an orderly manner.</p>
+
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section-project"> 
-                    <div class="title-section-project" onclick="changeProjectStatus(2)"> 
-                        <h1>Landing Pages</h1>
-                        <box-icon class="section-icon" type='solid' name='window-alt'></box-icon>
-                    </div> 
-                    <div class="content-section-project" data-status="close">
-                        <div class="title-links-project">
-                            <h1><strong>01</strong> Advertising Websites</h1>
-                            <div class="buttons-main">
-                                <a href="https://advertisingwebsite.netlify.app" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/Advertising-Websites"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <img src="/Imgs/WebGif.gif" alt="">
+                        <div class="reversed block-content">
+                            <img src="/Imgs/Mockup editar precios-min.png" alt="">
                             <div class="text-block">
-                                <h2>Subtle Animations</h2>
-                                <p><strong>Subtle</strong> animations are the secret spices of user interfaces, making users say, "I didn't notice it, but I can't imagine the design without it!"</p>
-                            </div>
-                        </div>
-                        <div class="block-content reversed">
-                            <img src="/Imgs/WebGif2.gif" alt="">
-                            <div class="text-block">
-                                <h2>Make your website unique</h2>
-                                <p>This buttons on the website allow you to <strong>change</strong> the entire theme of the webpage!</p>
-                            </div>
-                        </div>
-                        <div class="title-links-project">
-                            <h1><strong>02</strong> Restaurant Landing Page (WIP)</h1>
-                            <div class="buttons-main">
-                                <a href="https://celadon-bombolone-b7d98a.netlify.app/" target="_blank" title="Try it!"><box-icon name='world'></box-icon></a>
-                                <a href="https://github.com/SrGnico/Hero-V.1"title="To GitHub!" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                                <h2>Main fetaures:</h2>
+                                <p>- Add, edit or delete products.</p>
+                                <p>- Scan or add price manually.</p>
+                                <p>- Collect transfer or cash</p>
+                                <p>- Keep detailed daily log.</p>
+                                <p>- Modify quantity in cart.</p>
+                                <p>- Filter records by date.</p>
+                                <p>- Filter products by category or search.</p>
+                                <p>- Change the price of several products at once.</p>
+
                             </div>
                         </div>
                     </div>
@@ -176,7 +100,6 @@
                     <img class="img-me" src="/Imgs/me.jpeg" alt="a pic of me :D">
                     <div class="buttons-main">
                        <a href="https://github.com/SrGnico" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
-                       <a href="/Imgs/Web developer Resume.pdf" download="Gn Web developer Resume"><box-icon name='download'></box-icon></a>
                        <a href="https://www.linkedin.com/in/nicolas-rodriguez-750892268/" target="_blank"><box-icon name='linkedin-square' type='logo' ></box-icon></a>
                        <a href="mailto:gnwebdev404@gmail.com" target="_blank"><box-icon name='gmail' type='logo' ></box-icon></a>
                     </div>
